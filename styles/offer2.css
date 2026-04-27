@@ -8,7 +8,6 @@
 /* shared styles */
 
 main {
-  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -16,10 +15,15 @@ main {
   background-image: url("../images/Banner Image.png");
   background-size: cover;
   background-position: center;
-  padding: 50px 140px 140px 50px;
 
-  width: 1320px;
-  height: 600px;
+  /* The "Full Size" Secret: Dimensions */
+  width: 100%; /* Full width of the viewport/parent */
+  min-height: 100vh; /* Forces it to be at least the full height of the screen */
+
+  /* Optional: Centering content inside this banner */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .banner {
   justify-content: space-between;
@@ -37,5 +41,3 @@ main {
   color: white;
   text-align: center;
 }
-
-/* section style*/
